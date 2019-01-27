@@ -11,8 +11,11 @@
           <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" [routerLink]="['/lists']">Lists</a>
           </li>    
-      </ul>  
+      </ul>        
       <div *ngIf="loggedIn()" class="dropdown" dropdown>
+        <span class="mr-1">
+          <img src="{{photoUrl}}">
+        </span>
         <a class="dropdown-toggle text-light" dropdownToggle>
           Welcome {{authService.decodedToken?.unique_name | titlecase}}
         </a>

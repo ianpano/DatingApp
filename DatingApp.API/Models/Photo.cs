@@ -12,6 +12,8 @@ namespace DatingApp.API.Models
 
         public bool IsMain { get; set; }
 
+        public string PublicId { get; set; }
+
         // Properties added to implement cascaded delete
         public User User { get; set; }
 
